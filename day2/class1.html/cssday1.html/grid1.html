@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mani{
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: repeat(3,200px);
+            grid-template-rows: repeat(2,200px);
+           
+
+           
+        }
+        
+        .mani>div{
+            padding: 20px;
+            font-size: 30px;
+        }
+        .mani>div:nth-child(1){
+            background-color: red;
+        }
+        
+        .mani>div:nth-child(2){
+            background-color: orange;
+            grid-row-start: 2;
+            grid-column-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+
+        }
+        .mani>div:nth-child(3){
+            background-color: violet;
+        }
+        .mani>div:nth-child(4){
+            background-color: yellowgreen;
+        }
+        .mani>div:nth-child(5){
+            background-color: green;
+        }
+        .mani>div:nth-child(6){
+            background-color: black;
+        }
+       /* .mani>div:nth-child(7){
+            background-color: darkolivegreen;
+        }
+        .mani>div:nth-child(8){
+            background-color: darksalmon;
+        }*/
+       
+    </style>
+</head>
+<body>
+    <div  class="mani" style="display: grid;">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+</div>
+</body>
+</html>    
