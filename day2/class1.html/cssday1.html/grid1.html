@@ -10,9 +10,8 @@
             display: grid;
             grid-template-columns: repeat(3,200px);
             grid-template-rows: repeat(2,200px);
-           
-
-           
+            grid-template-areas:"o o vio" 
+            "yg g g"
         }
         
         .mani>div{
@@ -21,33 +20,39 @@
         }
         .mani>div:nth-child(1){
             background-color: red;
+            grid-area: r;
         }
         
         .mani>div:nth-child(2){
             background-color: orange;
-            grid-row-start: 2;
-            grid-column-start: 2;
-            grid-row-end: 3;
-            grid-column-start: 3;
+            grid-area: o;
 
         }
         .mani>div:nth-child(3){
             background-color: violet;
+            grid-area:vio;
         }
         .mani>div:nth-child(4){
             background-color: yellowgreen;
+            grid-area:yg;
+           
         }
         .mani>div:nth-child(5){
             background-color: green;
+            grid-area: g;
         }
         .mani>div:nth-child(6){
             background-color: black;
+            grid-area: b;
+            color: blue;
         }
        /* .mani>div:nth-child(7){
             background-color: darkolivegreen;
+            grid-area: dg;
         }
         .mani>div:nth-child(8){
             background-color: darksalmon;
+            grid-area: ds;
         }*/
        
     </style>
