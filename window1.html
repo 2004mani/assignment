@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hour">0</h1>
+    <h1 id="min">0</h1>
+    <h1 id="sec">0</h1>
+   
+</body>
+
+</html>
+<script>
+    var h = document.getElementById("hour")
+    var m = document.getElementById("min")
+    var s = document.getElementById("sec")
+    let hour=0
+    let min=0
+    let sec=0
+    setInterval(() => {
+        sec++
+       
+        if(sec>=60){
+            sec=0
+            min++
+            if(min>=60){
+                hour++
+                h.innerText=hour
+            }
+            m.innerText=min
+            
+        }
+        s.innerText=sec
+        
+        
+    },1000);
+
+    
+   
+     
+</script>
