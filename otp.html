@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="r" value="">
+    <button onclick="fun()">submit</button>
+</body>
+</html>
+<script>
+    function fun(){
+        let v = document.getElementById("r").value;
+        let promise1 = new Promise(function(resolve,reject){
+            setTimeout(function () {
+                if(v==1234){
+                    resolve("otp is correct")
+                }
+                else{
+                    reject("otp is incorrect")
+                }
+
+               
+                
+            },2000)
+
+            
+        })
+        console.log(promise1)
+        
+        
+        
+
+        
+
+    }
+
+
+</script>
